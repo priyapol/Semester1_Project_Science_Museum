@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: white;
+  color: black;
+  padding: 10px;
+}
+
+
+/* TOP BAR */
+.topbar {
+  min-height: 46px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.right-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn,
+.cart-btn {
+  background: #B2453B;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 11px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* NOTICE */
+.notice {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.notice a {
+  color: black;
+  font-weight: bold;
+}
+
+/* MONTH CONTROLS */
+.calendar-controls {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.month-switch {
+  width: 430px;
+  max-width: 100%;
+  height: 55px;
+  display: flex;
+}
+
+.month-switch button {
+  width: 55px;
+  border: none;
+  background: #2c8159;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.month-title {
+  flex: 1;
+  background: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+   text-align: center;
+}
+
+
+h1 {
+  margin: 70px 0 35px;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* CALENDAR WRAPPER */
+.calendar-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendar-wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+
+.calendar-wrapper::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+/* CALENDAR */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  min-width: 900px;
+  width: 100%;
+}
+
+.day-name {
+  background: black;
+  color: white;
+  padding: 17px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.date {
+  height: 137px;
+  background: #f5f5f5;
+  border: 2px solid white;
+  position: relative;
+  padding: 10px;
+}
+
+.date span {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.date.muted {
+  background: #eeeeee;
+}
+
+.date.muted span {
+  color: #999;
+  font-weight: normal;
+}
+
+.selected-date {
+  background: rgb(32, 143, 88);
+  color: black;
+  border-radius: 50%;
+  padding: 10px 13px;
+}
+
+.event,
+.close,
+.booked {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 28px 6px 12px;
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 6px;
+}
+
+.event {
+  background: rgb(32, 143, 88);
+}
+
+.close,
+.booked {
+  background: #B2453B;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  body {
+    padding: 8px;
+  }
+
+  .topbar {
+    justify-content: center;
+  }
+
+  .calendar-controls {
+    margin-top: 60px;
+  }
+
+  h1 {
+    margin-top: 50px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .calendar {
+    min-width: 760px;
+  }
+
+  .day-name {
+    font-size: 16px;
+    padding: 14px 10px;
+  }
+
+  .date {
+    height: 120px;
+  }
+
+  .event,
+  .close,
+  .booked {
+    font-size: 14px;
+    padding: 24px 5px 10px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  body {
+    padding: 6px;
+  }
+
+  .right-area {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .login-btn,
+  .cart-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .notice {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .calendar-controls {
+    margin-top: 40px;
+  }
+
+  .month-switch {
+    height: 48px;
+  }
+
+  .month-switch button {
+    width: 45px;
+    font-size: 28px;
+  }
+
+  .month-title {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 35px 0 25px;
+  }
+
+  .calendar {
+    min-width: 680px;
+  }
+
+  .day-name {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+
+  .date {
+    height: 105px;
+  }
+
+  .date span {
+    font-size: 14px;
+  }
+
+  .event,
+  .close,
+  .booked {
+    font-size: 12px;
+    padding: 20px 4px 8px;
+  }
+}

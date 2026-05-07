@@ -1,0 +1,120 @@
+.container {
+    height: calc(100vh - 80px);
+    /* below navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.container p {
+    font-size: 1.2rem;
+    opacity: .7;
+    color: #0f105e;
+}
+
+
+/* BUTTON */
+
+.home-page {
+    /* below navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homepage {
+    width: 15%;
+    padding: 15px;
+    background: #5f3a91;;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(218, 223, 220);
+    text-transform: capitalize;
+}
+
+.submit-btn:hover {
+    background: #219150;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .container {
+        padding: 60px 25px;
+    }
+
+    .container h1 {
+        font-size: 2.7rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+
+    .homepage {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 50px 15px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .homepage {
+        width: 100%;
+        max-width: 280px;
+
+        padding: 14px;
+
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+    .container h1 {
+        font-size: 1.7rem;
+    }
+
+    .container p {
+        font-size: 0.95rem;
+    }
+
+    .homepage {
+        font-size: 0.95rem;
+    }
+}
