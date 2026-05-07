@@ -30,6 +30,27 @@ This is a responsive HTML and CSS website created for a Science Community Museum
 - CSS
 - Font Awesome Icons
 
+
+## How to Run
+
+-  Download or clone the repository.
+-  Open the project folder.
+-  Open index.html in a web browser.
+
+## Responsive Design
+
+- Desktop screens
+- Tablet screens
+- Mobile screens
+
+## Author
+
+- Created by: Priya Jadhav
+
+##  License
+
+- This project is created for educational purposes.
+
 ## Folder Structure
 
 ```text
@@ -57,23 +78,3 @@ science-museum-website/
     ├── teacher.jpg
     └── other images
 
-## How to Run
-
--  Download or clone the repository.
--  Open the project folder.
--  Open index.html in a web browser.
-
-## Responsive Design
-
-- Desktop screens
-- Tablet screens
-- Mobile screens
-
-
-Author
-
-Created by: Priya Jadhav
-
-License
-
-This project is created for educational purposes.
