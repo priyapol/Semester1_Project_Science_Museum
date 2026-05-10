@@ -29,7 +29,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(177, 168, 168, 0.6); 
+  background: rgba(160, 141, 141, 0.6); 
   z-index: 1;
 }
 
@@ -43,9 +43,9 @@ body {
 
 h2 {
   margin-bottom: 20px;
-  color: rgb(72, 160, 132);
-  font-size: 30px;
-  font-weight: bolder;
+  color: rgb(18, 9, 37);
+  font-size: 35px;
+  font-weight: 800;
 }
 
 /* TOP GRID */
@@ -57,7 +57,7 @@ h2 {
 
 /* HOURS */
 .hours {
-  background: #8e96a7;
+  background: #dde6f0;
   width: 100%;
   max-width: 700px; /* adjust as needed */
   margin: auto;
@@ -65,12 +65,15 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
+  font-weight: bold;
+  color: rgb(15, 15, 15);
 }
 
 
 .closed {
-  color: rgb(163, 23, 23);
-  font-weight: bold;
+  color: rgb(131, 29, 29);
+  font-size: 23px;
+  font-weight: 800;
 }
 
 /* BOTTOM GRID */
@@ -82,19 +85,23 @@ h2 {
 }
 
 .card {
-  background: #8e96a7;
+  background: #dde6f0;
   width: 100%;
   max-width: 700px; /* adjust as needed */
   margin: auto;
   backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 10px;
-  font-size: 20px
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(15, 15, 15);
 }
 
 h3, h4 {
   margin-bottom: 10px;
-  color: rgb(18, 22, 21);
+  color: rgb(39, 22, 100);
+  font-size: 24px;
+  font-weight: 800;
 }
 
 /* RESPONSIVE */
