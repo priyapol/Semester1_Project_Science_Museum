@@ -43,7 +43,9 @@ body {
 
 h2 {
   margin-bottom: 20px;
-  color: rgb(236, 255, 249);
+  color: rgb(72, 160, 132);
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 /* TOP GRID */
@@ -62,6 +64,7 @@ h2 {
   backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 
@@ -86,6 +89,7 @@ h2 {
   backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 10px;
+  font-size: 20px
 }
 
 h3, h4 {
