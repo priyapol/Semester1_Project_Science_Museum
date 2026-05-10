@@ -150,7 +150,7 @@ h1 {
 }
 
 .date.muted span {
-  color: #999;
+  color: #111010;
   font-weight: normal;
 }
 
@@ -175,7 +175,7 @@ h1 {
 }
 
 .event {
-  background: rgb(32, 143, 88);
+  background: rgb(23, 102, 63);
 }
 
 .close,
